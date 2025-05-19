@@ -26,7 +26,7 @@ function HomeComponent() {
 
                 <div style={{ display: "flex", alignItems: "center" }}>
 
-                    <h2> Talk Tribe </h2>
+                    <h2> vidO </h2>
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center" }}>
