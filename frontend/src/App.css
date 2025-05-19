@@ -1,0 +1,247 @@
+.landingPageContainer{
+    width: 100vw;
+    height: 100vh;
+    background: url("/public/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.landingPageContainer nav{
+    padding-inline: 1.2rem;
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landingPageContainer nav h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.landingPageContainer nav .navlist{
+    display: flex;
+    gap: 1.6rem;
+    cursor: pointer;
+}
+
+.landingMainContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3rem;
+    height: 80vh;
+    align-items: center;
+}
+
+.landingMainContainer > div:nth-child(1) {
+    font-size: 2.2rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] {
+    background-color: #FF9839;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 1.9rem;
+}
+
+.landingMainContainer > div:nth-child(1) div[role="button"] a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
+
+.landingMainContainer > div:nth-child(2) {
+    height: 70vh;
+    width: auto;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  text-align: center;
+
+}
+.meetContainer {
+  display: flex;
+  padding-inline: 20px;
+  height: 80vh;
+  gap: 10vw;
+  justify-content: center;
+}
+
+.leftPanel {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel {
+  display: flex;
+  align-items: center;
+}
+
+.rightPanel > img {
+  width: 30vw;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* new design */
+
+.landingPageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, 
+    #39c6db 0%,    /* bright cyan-blue */
+    #6bcb74 50%,   /* fresh green */
+    #dbe253 100%   /* soft yellow-green */
+  );
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+}
+
+.logoText {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #e0f7e9;
+  text-shadow: 0 0 5px #2f6627;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.navlist p {
+  margin: 0 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.loginBtn p {
+  background: #2f6627;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+.loginBtn p:hover {
+  background: #3e8e41;
+}
+
+.landingMainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.textContainer {
+  max-width: 500px;
+}
+
+.textContainer h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px #2f6627;
+}
+
+.subtext {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: #d9f0d8;
+}
+
+.getStartedBtn a {
+  display: inline-block;
+  background: linear-gradient(45deg, #56ab2f, #a8e063);
+  padding: 0.75rem 2rem;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(86,171,47,0.5);
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.getStartedBtn a:hover {
+  background: linear-gradient(45deg, #a8e063, #56ab2f);
+  box-shadow: 0 8px 20px rgba(168,224,99,0.7);
+  transform: scale(1.05);
+}
+
+.imageContainer img {
+  margin-top: 80px;
+  width: 450px;
+  max-width: 100%;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+/* Footer quote with sizzling glow animation */
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
+}
+
+.sizzlingQuote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #e0f7e9;
+  animation: glow 2.5s ease-in-out infinite alternate;
+  text-shadow:
+    0 0 5px #56ab2f,
+    0 0 10px #a8e063,
+    0 0 20px #56ab2f,
+    0 0 30px #a8e063;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow:
+      0 0 5px #56ab2f,
+      0 0 10px #a8e063,
+      0 0 20px #56ab2f,
+      0 0 30px #a8e063;
+    color: #d9f0d8;
+  }
+  to {
+    text-shadow:
+      0 0 10px #a8e063,
+      0 0 20px #56ab2f,
+      0 0 30px #a8e063,
+      0 0 40px #56ab2f;
+    color: #f0ffe7;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #2f6627;
+  }
+  50% {
+    text-shadow: 0 0 15px #a8e063;
+  }
+}
