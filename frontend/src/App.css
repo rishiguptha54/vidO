@@ -245,3 +245,51 @@ footer {
     text-shadow: 0 0 15px #a8e063;
   }
 }
+
+
+/* newudated */
+
+.landingPageContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, 
+    #39c6db 0%,    
+    #6bcb74 50%,   
+    #dbe253 100%   
+  );
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.meetContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 60px;
+  gap: 40px;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
